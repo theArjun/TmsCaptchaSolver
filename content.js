@@ -39,7 +39,7 @@ function imageEncode(arrayBuffer) {
   return b64encoded;
 }
 async function getImageText(base64img) {
-  const res = await axios.post("http://127.0.0.1:9999/decode/", {
+  const res = await axios.post("http://127.0.0.1:9999/", {
     base64Image: base64img,
   });
   return res.data.result;
