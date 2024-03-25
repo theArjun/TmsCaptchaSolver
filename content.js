@@ -39,7 +39,7 @@ function imageEncode(arrayBuffer) {
   return b64encoded;
 }
 async function getImageText(base64img) {
-  const res = await axios.post("http://127.0.0.1:9999/", {
+  const res = await axios.post("https://tms-captcha.adhikariarjun.com.np/", {
     base64Image: base64img,
   });
   return res.data.result;
